@@ -1,0 +1,10 @@
+.grid-text-table {
+    width: 100%;
+    box-sizing: border-box;
+    border-collapse: collapse;
+
+    td, th {
+        border: 1px solid black;
+        text-align: center;
+    }
+}

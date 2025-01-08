@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { GridTextDatasource, ColumnData } from 'src/app/mock/grid-text/grid-text.datasource';
+
+import { IOperationalStatisticViewModel } from 'src/app/models/grid-text/grid-text-datasource.interface';
+import { IMapColumn } from 'src/app/models/grid-text/grid-text-component.interface';
 
 @Component({
   selector: 'grid-text-page',
@@ -6,5 +10,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./grid-text.page.scss']
 })
 export class GridTextPageComponent {
-  title = 'n';
+
+  datasource: IOperationalStatisticViewModel = GridTextDatasource
+  header: IMapColumn[] = ColumnData
+
 }
