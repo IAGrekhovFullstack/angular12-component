@@ -1,0 +1,6 @@
+<div class="wrapper-icon-component">
+    <div class="wrapper-icon" [ngStyle]="getIconStyle()" (click)="addActiveFocus()" [ngClass]="{'active-focus': iconFocus}">
+        <span class="material-icons">{{iconProperties?.iconName}}</span>
+    </div>
+    <div class="icon-tooltip" [ngClass]="{'display-none': iconFocus}">{{iconProperties?.tooltip}}</div>
+</div>
