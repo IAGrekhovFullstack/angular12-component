@@ -13,5 +13,4 @@ export class GridTextPageComponent {
 
   datasource: IOperationalStatisticViewModel = GridTextDatasource
   header: IMapColumn[] = ColumnData
-
 }

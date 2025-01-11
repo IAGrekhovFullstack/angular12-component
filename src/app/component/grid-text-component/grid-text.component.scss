@@ -2,9 +2,13 @@
     width: 100%;
     box-sizing: border-box;
     border-collapse: collapse;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    border-radius: 4px;
 
     td, th {
         border: 1px solid black;
         text-align: center;
+        padding: 8px;
     }
 }

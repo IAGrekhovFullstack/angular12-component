@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app.component';
 
@@ -23,7 +24,8 @@ import { IconPageComponent } from './page/icon-page/icon.page';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

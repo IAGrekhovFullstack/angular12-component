@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+.wrapper-icon-component {
+    position: relative;
+}
+
 .wrapper-icon {
     display: inline-block;
     border: 1px solid black;
@@ -9,6 +13,7 @@
     user-select: none;
 
     :hover {
+        scale: 1.3;
         cursor: pointer;
     }
 }
@@ -33,4 +38,14 @@
 
 .display-none {
     scale: 0 !important;
+}
+
+.icon-component-grid {
+    position: absolute;
+    top: 120%;
+    left: 120%;
+    max-width: 300px;
+    width: 100%;
+    scale: 1;
+    transition: 0.4s;
 }

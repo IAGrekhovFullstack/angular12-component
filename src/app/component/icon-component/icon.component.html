@@ -3,4 +3,10 @@
         <span class="material-icons">{{iconProperties?.iconName}}</span>
     </div>
     <div class="icon-tooltip" [ngClass]="{'display-none': iconFocus}">{{iconProperties?.tooltip}}</div>
+
+    <grid-text-component class="icon-component-grid" (click)="addActiveFocus()" [ngClass]="{'display-none': !iconFocus}"
+        [dataSource]="iconProperties?.gridDataCells"
+        [columnMap]="iconProperties?.gridDataColumn"
+        >
+    </grid-text-component>
 </div>

@@ -1,5 +1,24 @@
 <div class="wrapper-icon-component">
     <icon-component [iconProperties]="iconProperties"></icon-component>
-    <icon-component [iconProperties]="iconProperties"></icon-component>
-    <icon-component [iconProperties]="iconProperties"></icon-component>
+</div>
+
+<div class="wrapper-properties">
+    <h2>Настройки компонента</h2>
+    <div class="wrapper-properties-grid">
+        <label for="icon-name"> Название иконки (Material Icon) <br>
+            <input id="icon-name" type="text" [(ngModel)]="iconProperties.iconName">
+        </label>
+        <label for="icon-size"> Размер иконки <br>
+            <input id="icon-size" type="text" [(ngModel)]="iconProperties.iconSize">
+        </label>
+        <label for="icon-color"> Цвет иконки <br>
+            <input id="icon-color" type="text" [(ngModel)]="iconProperties.iconColor">
+        </label>
+        <label for="icon-background"> Цвет фона <br>
+            <input id="icon-background" type="text" [(ngModel)]="iconProperties.backgroundColor">
+        </label>
+        <label for="icon-tooltip"> Тултип <br>
+            <input id="icon-tooltip" type="text" [(ngModel)]="iconProperties.tooltip">
+        </label>
+    </div>
 </div>

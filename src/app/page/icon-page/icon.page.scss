@@ -1,4 +1,11 @@
 .wrapper-icon-component {
+    margin-top: 20px;
     display: flex;
     gap: 10px;
+}
+
+.wrapper-properties-grid {
+    display: grid;
+    text-align: left;
+    font-size: 1.2em;
 }
